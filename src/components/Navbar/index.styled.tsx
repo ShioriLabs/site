@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import Container from '../Container'
 
 const Nav = styled.nav`
-  width: 100vw;
+  width: 100%;
   background: ${props => props.theme.colors.white}
 `
 

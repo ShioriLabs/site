@@ -16,6 +16,10 @@ const HeroHeader = styled.h1`
   color: ${props => props.theme.colors.branding};
   margin: 0px;
   margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 `
 
 const HeroSubheader = styled.p`

@@ -49,7 +49,6 @@ const HomeSectionText = styled.p`
   margin: 0px;
   font-size: 24px;
   line-height: 30px;
-  box-sizing: border-box;
 `
 
 interface HomeSectionProps extends HomeSectionBaseProps, HomeSectionContainerProps {

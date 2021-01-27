@@ -10,6 +10,7 @@ const Nav = styled.nav`
 const NavContainer = styled(Container)`
   display: flex;
   align-items: center;
+  height: 100%;
 `
 
 const Text = css`

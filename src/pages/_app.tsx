@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 
@@ -18,6 +19,12 @@ export default function App ({ Component, pageProps }: AppProps): React.ReactEle
   return (
     <>
       <ThemeProvider theme={theme}>
+        <Head>
+          <title>Shiori Labs</title>
+          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        </Head>
         <GlobalStyle />
         <Component {...pageProps} />
       </ThemeProvider>

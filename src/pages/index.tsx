@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 
 import Layout from '../layout/Default'
 
@@ -8,6 +9,9 @@ import Hero, { HeroHeader, HeroSubheader, HeroTextContainer } from '../component
 const Index = (): React.ReactElement => {
   return (
     <Layout>
+      <Head>
+        <title>Shiori Labs</title>
+      </Head>
       <Container>
         <Hero>
           <HeroTextContainer>

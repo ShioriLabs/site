@@ -33,7 +33,6 @@ interface AProps {
 const A = styled.a<AProps>`
   ${Text}
   color: ${props => props.theme.colors.black};
-  font-weight: ${props => props.theme.fontWeights.normal};
   text-decoration: none;
   margin-right: 24px;
 

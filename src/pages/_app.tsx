@@ -8,9 +8,9 @@ import 'normalize.css'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    color: ${(props): string => props.theme.colors.black};
+    color: ${props => props.theme.colors.black};
+    font-weight: ${props => props.theme.fontWeights.normal};
     font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    font-weight: 500;
   }
 `
 

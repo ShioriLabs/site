@@ -14,9 +14,9 @@ const HomeSectionBase = styled.section<HomeSectionBaseProps>`
   `}
   display: flex;
   align-items: center;
-  padding: 48px 0px;
+  padding: 32px 0px;
   box-sizing: border-box;
-  min-height: 256px;
+  min-height: 360px;
 `
 
 interface HomeSectionContainerProps {

@@ -32,11 +32,7 @@ export default class MyDocument extends Document {
   render (): React.ReactElement {
     return (
       <Html lang="id">
-        <Head>
-          <meta charSet="utf-8" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

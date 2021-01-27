@@ -20,6 +20,8 @@ export default function App ({ Component, pageProps }: AppProps): React.ReactEle
     <>
       <ThemeProvider theme={theme}>
         <Head>
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
           <title>Shiori Labs</title>
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />

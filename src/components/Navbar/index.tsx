@@ -1,17 +1,17 @@
 import React from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+// import Link from 'next/link'
+// import { useRouter } from 'next/router'
 
-import { Nav, Logo, NavContainer, LinkContainer, A } from './index.styled'
+import { Nav, Logo, NavContainer /*, LinkContainer, A */ } from './index.styled'
 
 const Navbar = (): React.ReactElement => {
-  const router = useRouter()
+  // const router = useRouter()
 
   return (
     <Nav>
       <NavContainer>
         <Logo>Shiori Labs</Logo>
-        <LinkContainer>
+        {/* <LinkContainer>
           <Link href="/" passHref>
             <A active={router.pathname === '/'}>Beranda</A>
           </Link>
@@ -21,7 +21,7 @@ const Navbar = (): React.ReactElement => {
           <Link href="/about" passHref>
             <A active={router.pathname === '/about'}>Tentang</A>
           </Link>
-        </LinkContainer>
+        </LinkContainer> */}
       </NavContainer>
     </Nav>
   )

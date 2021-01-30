@@ -5,7 +5,7 @@ import Layout from '../layout/Default'
 
 import Container from '../components/Container'
 import Hero, { HeroHeader, HeroSubheader, HeroTextContainer } from '../components/Hero'
-import HomeSection, { HomeSectionTextContainer, HomeSectionTitle, HomeSectionText } from '../components/HomeSection'
+// import HomeSection, { HomeSectionTextContainer, HomeSectionTitle, HomeSectionText } from '../components/HomeSection'
 
 const Index = (): React.ReactElement => {
   return (
@@ -16,12 +16,12 @@ const Index = (): React.ReactElement => {
       <Container>
         <Hero>
           <HeroTextContainer>
-            <HeroHeader>Sebuah Tempat Dimana Kesenangan Dibuat</HeroHeader>
-            <HeroSubheader>Kami Shiori Labs, dan kami membuat hal-hal yang menyenangkan!</HeroSubheader>
+            <HeroHeader>Hai!</HeroHeader>
+            <HeroSubheader>Kami sedang mempersiapkan halaman ini, mohon ditunggu ya!</HeroSubheader>
           </HeroTextContainer>
         </Hero>
       </Container>
-      <HomeSection invertedBackground>
+      {/* <HomeSection invertedBackground>
         <HomeSectionTextContainer>
           <HomeSectionTitle>Kami adalah Shiori Labs</HomeSectionTitle>
           <HomeSectionText>
@@ -44,7 +44,7 @@ const Index = (): React.ReactElement => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pengen megane gf gan.
           </HomeSectionText>
         </HomeSectionTextContainer>
-      </HomeSection>
+      </HomeSection> */}
     </Layout>
   )
 }

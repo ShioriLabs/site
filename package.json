@@ -1,15 +1,16 @@
 {
   "name": "@shiorilabs/site",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Shiori Labs' site",
-  "main": "dist/app.js",
   "scripts": {
-    "test": "eslint src/**/*.{ts,tsx} --fix",
-    "build": "next build",
-    "build:static": "npm run build && npm run export",
-    "dev": "next dev",
-    "start": "next start",
-    "export": "next export"
+    "clean": "rm -rf dist",
+    "copy": "mkdir -p dist/fonts && cp index.html 404.html favicon.png _headers _redirects dist/ && cp public/fonts/* dist/fonts/",
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build": "pnpm run clean && pnpm run copy && pnpm run build:css",
+    "dev:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev:static": "chokidar \"index.html\" \"404.html\" \"favicon.png\" \"_headers\" \"_redirects\" -c \"pnpm run copy\" --initial",
+    "dev:serve": "sirv dist --dev --port 3000",
+    "dev": "concurrently -k -n css,static,serve -c cyan,magenta,green \"pnpm:dev:css\" \"pnpm:dev:static\" \"pnpm:dev:serve\""
   },
   "repository": {
     "type": "git",
@@ -17,31 +18,15 @@
   },
   "author": "Dhika Rizky <deka_r@outlook.com>",
   "license": "MIT",
+  "packageManager": "pnpm@11.1.1",
   "bugs": {
     "url": "https://github.com/shiorilabs/site/issues"
   },
   "homepage": "https://github.com/shiorilabs/site#readme",
-  "dependencies": {
-    "next": "^10.0.5",
-    "normalize.css": "^8.0.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "styled-components": "^5.2.1"
-  },
   "devDependencies": {
-    "@types/node": "^14.14.21",
-    "@types/react": "^17.0.0",
-    "@types/styled-components": "^5.1.7",
-    "@typescript-eslint/eslint-plugin": "^4.13.0",
-    "@typescript-eslint/parser": "^4.13.0",
-    "babel-plugin-styled-components": "^1.12.0",
-    "eslint": "^7.17.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "typescript": "^3.9.7"
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^10.0.3",
+    "sirv-cli": "^3.0.1",
+    "tailwindcss": "^3.4.17"
   }
 }

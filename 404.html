@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <title>Halaman tidak ditemukan - Shiori Labs</title>
+    <meta name="description" content="Halaman yang kamu cari tidak ditemukan." />
+    <link rel="stylesheet" href="/output.css" />
+  </head>
+  <body>
+    <div class="flex min-h-screen flex-col">
+      <nav class="w-full bg-paper">
+        <div
+          class="mx-auto flex w-full max-w-[1024px] items-center px-6 py-4 xl:max-w-[1280px]"
+        >
+          <a href="/" class="text-[18px] font-bold text-branding">Shiori Labs</a>
+        </div>
+      </nav>
+
+      <main class="flex-1">
+        <div
+          class="mx-auto flex min-h-[560px] w-full max-w-[1024px] items-center px-6 py-6 xl:max-w-[1280px]"
+        >
+          <div class="max-w-[560px]">
+            <h1 class="mb-8 text-[48px] font-bold leading-none text-branding">
+              404
+            </h1>
+            <p class="text-[24px] leading-snug">
+              Halaman yang kamu cari tidak ditemukan.
+              <a href="/" class="text-branding underline">Kembali ke beranda</a>.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mt-auto w-full border-t border-border">
+        <div
+          class="mx-auto flex w-full max-w-[1024px] items-center px-6 py-4 xl:max-w-[1280px]"
+        >
+          <div>
+            <span class="block font-bold text-branding">Hai dari Bekasi!</span>
+            <span class="mt-0.5 block text-[16px] font-bold">
+              Shiori Labs, <span id="year">2026</span>
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+  </body>
+</html>

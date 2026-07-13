@@ -15,7 +15,28 @@
 
 @layer base {
   body {
-    @apply bg-paper text-ink font-sans;
+    @apply font-sans;
     font-weight: 500;
+  }
+}
+
+/* Load-in stagger: content rises and fades in on first paint. Per-element delay
+   is set inline via animation-delay so the hero, divider, and list cascade. */
+@layer utilities {
+  .rise {
+    opacity: 0;
+    /* iOS-style spring curve (matches ease-ios-spring token in tailwind.config). */
+    animation: rise 400ms cubic-bezier(0.36, 0.66, 0.04, 1) forwards;
+  }
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

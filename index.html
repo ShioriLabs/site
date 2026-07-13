@@ -25,71 +25,92 @@
     />
     <link rel="stylesheet" href="/output.css" />
   </head>
-  <body>
+  <body class="bg-paper text-ink dark:bg-[#1A1A1A] dark:text-white/90">
     <div class="flex min-h-screen flex-col">
-      <nav class="w-full bg-paper">
+      <nav class="w-full border-b border-border/50 dark:border-white/10">
         <div
-          class="mx-auto flex w-full max-w-[1024px] items-center px-6 py-4 xl:max-w-[1280px]"
+          class="mx-auto flex w-full max-w-[880px] items-center gap-3 px-6 py-5"
         >
-          <span class="text-[18px] font-bold text-branding">Shiori Labs</span>
+          <img src="/favicon.png" alt="" class="h-7 w-7" />
+          <span class="text-[17px] font-bold text-branding">Shiori Labs</span>
         </div>
       </nav>
 
       <main class="flex-1">
-        <div
-          class="mx-auto w-full max-w-[1024px] px-6 py-16 xl:max-w-[1280px]"
-        >
-          <section class="max-w-[640px]">
-            <h1 class="mb-6 text-[48px] font-bold leading-none text-branding">
+        <div class="mx-auto w-full max-w-[880px] px-6 py-20">
+          <section class="rise max-w-[620px]" style="animation-delay: 0ms">
+            <h1 class="mb-5 text-[52px] font-bold leading-none text-branding">
               Hai!
             </h1>
-            <p class="text-[24px] leading-snug">
+            <p class="text-[22px] leading-relaxed text-ink/70 dark:text-white/70">
               Shiori Labs bikin produk kecil yang membuat rutinitas harianmu
               sedikit lebih ringan.
             </p>
           </section>
 
-          <section class="mt-16">
-            <h2 class="mb-6 text-[16px] font-bold uppercase tracking-wide">
-              Yang kami buat
+          <hr
+            class="rise my-14 border-border/60 dark:border-white/10"
+            style="animation-delay: 80ms"
+          />
+
+          <section>
+            <h2
+              class="rise mb-8 flex items-center gap-2 text-[14px] font-bold uppercase tracking-[0.2em] text-ink/50 dark:text-white/40"
+              style="animation-delay: 120ms"
+            >
+              <span class="text-branding">&rsaquo;</span> Yang kami buat
             </h2>
-            <div class="grid gap-6 sm:grid-cols-2">
+
+            <div
+              class="flex flex-col divide-y divide-border/60 dark:divide-white/10"
+            >
               <a
                 href="https://commute.shiorilabs.id"
                 rel="noopener"
-                class="group flex flex-col rounded-2xl border border-border bg-paper p-6 transition-colors hover:border-branding"
+                class="rise group flex items-start gap-5 py-6 transition-colors duration-200 ease-ios-spring hover:text-branding"
+                style="animation-delay: 160ms"
               >
-                <span class="text-[20px] font-bold text-branding">Commute</span>
-                <span class="mt-2 flex-1 leading-snug">
-                  Aplikasi jadwal kereta buat anak Jakarta. Cek jadwal KRL, MRT,
-                  dan LRT dari genggaman.
+                <span class="flex-1">
+                  <span class="text-[22px] font-bold text-branding">Commute</span>
+                  <span
+                    class="mt-1 block leading-snug text-ink/70 dark:text-white/60"
+                  >
+                    Aplikasi jadwal kereta buat anak Jakarta. Cek jadwal KRL,
+                    MRT, dan LRT dari genggaman.
+                  </span>
                 </span>
                 <span
-                  class="mt-4 font-bold text-branding transition-transform group-hover:translate-x-0.5"
+                  class="mt-1 text-[20px] text-border transition-all duration-300 ease-ios-spring group-hover:translate-x-1 group-hover:text-branding"
+                  >&rarr;</span
                 >
-                  Buka Commute &rarr;
-                </span>
               </a>
 
               <a
                 href="https://github.com/ShioriLabs/shiori"
                 rel="noopener"
-                class="group flex flex-col rounded-2xl border border-border bg-paper p-6 transition-colors hover:border-branding"
+                class="rise group flex items-start gap-5 py-6 transition-colors duration-200 ease-ios-spring hover:text-branding"
+                style="animation-delay: 200ms"
               >
-                <span class="text-[20px] font-bold text-branding">Shiori</span>
-                <span class="mt-2 flex-1 leading-snug">
-                  Bot Discord yang seru dan menyenangkan buat meramaikan server
-                  komunitasmu.
+                <span class="flex-1">
+                  <span class="text-[22px] font-bold text-branding">Shiori</span>
+                  <span
+                    class="mt-1 block leading-snug text-ink/70 dark:text-white/60"
+                  >
+                    Bot Discord yang seru dan menyenangkan buat meramaikan server
+                    komunitasmu.
+                  </span>
                 </span>
                 <span
-                  class="mt-4 font-bold text-branding transition-transform group-hover:translate-x-0.5"
+                  class="mt-1 text-[20px] text-border transition-all duration-300 ease-ios-spring group-hover:translate-x-1 group-hover:text-branding"
+                  >&rarr;</span
                 >
-                  Lihat di GitHub &rarr;
-                </span>
               </a>
             </div>
 
-            <p class="mt-8 text-[16px]">
+            <p
+              class="rise mt-10 text-[16px] text-ink/60 dark:text-white/50"
+              style="animation-delay: 240ms"
+            >
               Semua proyek kami ada di
               <a
                 href="https://github.com/ShioriLabs"
@@ -102,13 +123,13 @@
         </div>
       </main>
 
-      <footer class="mt-auto w-full border-t border-border">
+      <footer class="mt-auto w-full border-t border-border/50 dark:border-white/10">
         <div
-          class="mx-auto flex w-full max-w-[1024px] items-center px-6 py-4 xl:max-w-[1280px]"
+          class="mx-auto flex w-full max-w-[880px] items-center px-6 py-5"
         >
           <div>
             <span class="block font-bold text-branding">Hai dari Bekasi!</span>
-            <span class="mt-0.5 block text-[16px] font-bold">
+            <span class="mt-0.5 block text-[15px] font-bold">
               Shiori Labs, <span id="year">2026</span>
             </span>
           </div>

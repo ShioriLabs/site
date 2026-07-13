@@ -22,6 +22,10 @@ module.exports = {
           'Helvetica Neue',
           'sans-serif'
         ]
+      },
+      transitionTimingFunction: {
+        // iOS-style spring: quick start, soft settle (no overshoot).
+        'ios-spring': 'cubic-bezier(0.36, 0.66, 0.04, 1)'
       }
     }
   },

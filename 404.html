@@ -9,39 +9,44 @@
     <meta name="description" content="Halaman yang kamu cari tidak ditemukan." />
     <link rel="stylesheet" href="/output.css" />
   </head>
-  <body>
+  <body class="bg-paper text-ink dark:bg-[#1A1A1A] dark:text-white/90">
     <div class="flex min-h-screen flex-col">
-      <nav class="w-full bg-paper">
+      <nav class="w-full border-b border-border/50 dark:border-white/10">
         <div
-          class="mx-auto flex w-full max-w-[1024px] items-center px-6 py-4 xl:max-w-[1280px]"
+          class="mx-auto flex w-full max-w-[880px] items-center gap-3 px-6 py-5"
         >
-          <a href="/" class="text-[18px] font-bold text-branding">Shiori Labs</a>
+          <a href="/" class="flex items-center gap-3">
+            <img src="/favicon.png" alt="" class="h-7 w-7" />
+            <span class="text-[17px] font-bold text-branding">Shiori Labs</span>
+          </a>
         </div>
       </nav>
 
       <main class="flex-1">
         <div
-          class="mx-auto flex min-h-[560px] w-full max-w-[1024px] items-center px-6 py-6 xl:max-w-[1280px]"
+          class="mx-auto flex min-h-[560px] w-full max-w-[880px] items-center px-6 py-6"
         >
           <div class="max-w-[560px]">
-            <h1 class="mb-8 text-[48px] font-bold leading-none text-branding">
+            <h1 class="mb-6 text-[52px] font-bold leading-none text-branding">
               404
             </h1>
-            <p class="text-[24px] leading-snug">
+            <p class="text-[22px] leading-relaxed text-ink/70 dark:text-white/70">
               Halaman yang kamu cari tidak ditemukan.
-              <a href="/" class="text-branding underline">Kembali ke beranda</a>.
+              <a href="/" class="font-bold text-branding underline"
+                >Kembali ke beranda</a
+              >.
             </p>
           </div>
         </div>
       </main>
 
-      <footer class="mt-auto w-full border-t border-border">
+      <footer class="mt-auto w-full border-t border-border/50 dark:border-white/10">
         <div
-          class="mx-auto flex w-full max-w-[1024px] items-center px-6 py-4 xl:max-w-[1280px]"
+          class="mx-auto flex w-full max-w-[880px] items-center px-6 py-5"
         >
           <div>
             <span class="block font-bold text-branding">Hai dari Bekasi!</span>
-            <span class="mt-0.5 block text-[16px] font-bold">
+            <span class="mt-0.5 block text-[15px] font-bold">
               Shiori Labs, <span id="year">2026</span>
             </span>
           </div>
